@@ -2,6 +2,15 @@
 A toy to convert image to 01 strings and output to a text format(like .txt)，through its pixel graw level. 
 
 一個將圖片轉換成01字符串並輸出到txt文本（或者別的文本格式）的小玩具，貼吧之類的經常能看到這種圖。原理是通過像素灰度判斷應該用0或者1來代替圖片區域。
+主要公式：
+
+$grayLevel = $R * 0.299 + $G * 0.587 + $B * 0.114;
+if ($grayLevel >= 192) {
+    // add 0
+}
+else{
+    // add 1
+}
 
 比如這樣的：
 
